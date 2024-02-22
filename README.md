@@ -13,11 +13,10 @@
 
 En este proyecto, se creo una página web destinada a visualizar, filtrar y
 ordenar el catálogo de películas de
-[_The Movie Database API V3_](https://developer.themoviedb.org/docs).
+[_The Movie Database API V3_].
 Esta página puede servir como un catálogo de
 películas general.
 
-![Preview app](https://github-production-user-asset-6210df.s3.amazonaws.com/123121338/271433237-2bd1477b-15ef-49d4-9fcb-226b3263c46a.png)
 
 
 

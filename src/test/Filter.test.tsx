@@ -1,4 +1,6 @@
-import { render, fireEvent } from '@testing-library/react';
+
+
+import { render, fireEvent, screen } from '@testing-library/react';
 import Filter from '../components/Filter';
 
 describe('Filter Component', () => {
@@ -7,12 +9,10 @@ describe('Filter Component', () => {
     const mockOnGenreChange = jest.fn();
 
     // Renderizar el componente Filter y pasar la función mock como prop
-    const { getByLabelText } = render(
-      <Filter onGenreChange={mockOnGenreChange} />
-    );
+    render(<Filter onGenreChange={mockOnGenreChange} />);
 
-    // Encontrar el select por su etiqueta
-    const selectElement = getByLabelText('Filter by genre');
+    // Encontrar el select por su texto visible
+    const selectElement = screen.getByDisplayValue('Filter');
 
     // Simular el cambio de selección en el select
     fireEvent.change(selectElement, { target: { value: '28' } });

@@ -1,0 +1,196 @@
+/* Estilos para el contenedor principal */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: black;
+}
+
+/* Estilos para un contenedor específico con margen superior */
+.container mt-4 {
+  background-color: rgb(37, 36, 36);
+}
+
+/* Estilos para encabezados de nivel 1 */
+h1 {
+  color: #a70909;
+  font-size: 100px;
+}
+
+/* Estilos para botones de búsqueda */
+.search-button {
+  padding: 2px;
+  color: #a70909; /* Texto rojo */
+  /* Otros estilos según sea necesario */
+}
+
+/* Estilos para encabezados de nivel 5 */
+h5 {
+  color: #a70909;
+}
+
+/* Estilos para el contenedor de la lista de películas */
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos para el contenedor de la lista de películas */
+.movie-list-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos para títulos de películas */
+.movie-title {
+  color: #a70909;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 75px;
+  margin: 25px;
+}
+
+/* Estilos para imágenes de películas */
+img {
+  width: 220px;
+  height: 320px;
+  margin-top: 10px;
+  border-radius: 5px;
+  flex: 1; /* Asigna un factor de flexibilidad de 1 a la imagen. */
+  flex-grow: 1px; 
+  flex-basis: 200px; 
+  overflow: hidden; /* Oculta cualquier contenido que exceda las dimensiones especificadas. */
+  transition: 0.5s; /* Aplica una transición suave durante 0.5 segundos a cambios en la imagen. */
+}
+
+/* Efecto hover para imágenes */
+img:hover {
+  flex: 2;
+  filter: grayscale(0);
+}
+
+/* Estilos para el contenedor de filtros */
+.div-filtros {
+  display: flex;
+  margin: 19px;
+  text-align: center; 
+  justify-content: center;
+}
+
+/* Estilos para elementos de selección */
+.selection {
+  color: #70050a;
+  background-color: #fafafa;
+  border: none;
+  border-radius: 1px;
+  text-align: center;  
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  margin-bottom: 10px;
+}
+
+/* Estilos para tarjetas de película */
+.movie-card {
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: #0c0c0c;
+  text-align: center; 
+  justify-content: center;
+  margin: 20px;
+  width: 240px;
+  height: 420px;
+  transition: all 0.3s;
+}
+
+/* Efecto hover para tarjetas de película */
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #6b0101;
+}
+
+/* Estilos adicionales para encabezados de nivel 5 */
+h5 {
+  font-size: large;
+  font-weight: bolder;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Estilos para párrafos */
+p {
+  padding: 0;
+  margin: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #c5bfbf;
+}
+
+/* Estilos para botones */
+button {
+  color: #70050a;
+  background-color: #fafafa;
+  border: none;
+  border-radius: 1px;
+  text-align: left;  
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+
+
+
+.movie-detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.button-back {
+  color: #70050a;
+  background-color: #fafafa;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+}
+
+.img-movie-detail {
+  width: 100px;
+  height: 600px;
+  border-radius: 5px;
+}
+
+.detail-container {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.movie-title-detail {
+  color: #a70909;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.movie-detail {
+  color: #c5bfbf;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
